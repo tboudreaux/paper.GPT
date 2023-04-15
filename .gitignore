@@ -6,3 +6,4 @@ emailList.txt
 config.py
 *.log
 __pycache__
+*.html
