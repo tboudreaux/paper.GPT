@@ -1,0 +1,38 @@
+# rename to config.py
+# set parameters to your parameters
+
+# postgres parameters
+postgresIP = "0.0.0.0"
+postgrsPort = "5432"
+postgrsDB = "arxivsummary"
+postgrsUser = "postgres"
+postgrsPass = "postgres"
+
+# Vector database / Retrival API parameters
+retrivalAPI_IP = "0.0.0.0"
+retrivalAPI_Port = "8067"
+
+# The directory where you store the gmail.cred file (and where the html
+# summary will be written to). Note the gmail.cred file must be 2 lines
+# the first line is the gmail address to loginto and to send from
+# the second line is the password
+root = "/path/to/cloned/repository"
+
+# Categories from the arxiv to summarize and full names for them in a lookup
+# table
+arxivCategories = ["astro-ph.CO", "astro-ph.EP", "astro-ph.GA", "astro-ph.HE", "astro-ph.IM", "astro-ph.SR"]
+catNameLookup = {"astro-ph.CO": "Cosmology and Nongalactic Astrophysics",
+                 "astro-ph.EP": "Earth and Planetary Astrophysics",
+                 "astro-ph.GA": "Astrophysics of Galaxies",
+                 "astro-ph.HE": "High Energy Astrophysical Phenomena",
+                 "astro-ph.IM": "Instrumentation and Methods for Astrophysics",
+                 "astro-ph.SR": "Solar and Stellar Astrophysics"}
+
+# Emails to send summary to
+emails = [
+	"email@example.com"
+    ]
+
+
+# Note that your OPENAI_API_KEY must be set as an environment variable
+# Also note that your BEARER_TOKEN must be set as an environment variable
