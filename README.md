@@ -1,7 +1,7 @@
 # Paper.GPT
 
 This is a simple test to see if gpt-3.5-turbo can effectivley summarize a paper
-given in a pdf form and then answer questions about that paper
+given in a pdf form and then answer questions about that paper (<a href="https://algebrist.ddns.net/~tboudreaux/files/summaryResults.html">live demo</a>)
 
 ## Installation
 Install the requirments
