@@ -6,7 +6,7 @@ given in a pdf form and then answer questions about that paper (<a href="https:/
 ## Installation
 Install the requirments
 
-	1) PyPDF2
+	1) yagmail
 	2) openai
 	3) Milvus
 	4) postgres
