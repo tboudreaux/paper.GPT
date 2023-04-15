@@ -15,17 +15,14 @@ Install the requirments
 
 ## Setup
 You will need a working openAI api key (I have found that one summarized paper
-tends to cost about 0.1 cents based on the Mid april 2023 openAI API pricing)
+tends to cost about 0.1 cents based on the Mid april 2023 openAI API pricing).
+You will also need a bearer token for the vector databse. You can generate one
+of these online.
 
-Once you have your api key place it in a file called key.pem in the same
-directory as you will be running the summarize script from (only put the key in
-there). Make sure not to share this key and MAKE SURE NOT TO ADD IT TO A GIT
-REPO! The git ignore for this repo ignores key.pem and all *.pem
-files...HOWEVER if you name it something else and then modify the summarize
-script to read that different file it may accidently get read. You can also
-(and probably should) set an env variable for your api key (to avoid this risk)
+place your openAI api key in an enviromental variable called OPENAI_API_KEY
+and place your bearer token in an enviromental variable called BEARER_TOKEN.
 
-You will then need to setup a table in a postgres database called arxiv schema
+You will then need to setup a table in a postgres database called arxivsummary
 with the following schema
 
 ```sql
