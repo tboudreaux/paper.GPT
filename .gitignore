@@ -3,3 +3,6 @@ key.pem
 *.pem
 *.cred
 emailList.txt
+config.py
+*.log
+__pycache__
