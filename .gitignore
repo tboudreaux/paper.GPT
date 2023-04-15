@@ -2,3 +2,4 @@ key.pem
 *.pkl
 *.pem
 *.cred
+emailList.txt
