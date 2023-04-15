@@ -17,7 +17,7 @@ if [ $DOW != 6 ] && [$DOW != 7]; then
 	echo "[$datetime : info] Sending summary email." >> "$root/summary.log"
 	$pythonEXE "$root/sendSummary.py"
 else
-	echo "[$datetime : info] It's the weekend, no new papers to summarize." >> "$root/summary.log
+	echo "[$datetime : info] It's the weekend, no new papers to summarize." >> "$root/summary.log"
 fi
 
 echo "[$datetime : info] complete" >> "$root/summary.log"
